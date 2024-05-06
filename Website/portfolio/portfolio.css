@@ -1,25 +1,41 @@
-/* background */
-body {
-    background: linear-gradient(to bottom, #ffffff 0%, #4c4c4c 100%);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.page{
-    padding-top: 5%;
+/* background */
+body {
+    background: linear-gradient(to bottom, #d4d3d3 0%, #000 100%);
+    width: 100%;
+    height: 100vh;
+    font-family: "Poetsen One", sans-serif;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 /*navagation bar*/
+.nav { 
+    grid-area: 1 / 1 / 2 / 5; 
+    height: 8vh;
+    height: 100%;
+}
+
 nav {
-    /*size and initial position of the bar*/
     position: fixed;
     top: 0;
     width: 100%;
     height: auto;
     right: 1px;
 
-    /*color of the nav bar*/
     background: linear-gradient(to top, #ffffff00 0%, #4c4c4c 100%);
     font-size: 30px;
     color:#ffffff;
@@ -27,7 +43,6 @@ nav {
     padding-top: 1em;
     padding-bottom: 10px;
     
-    /*makes sure it is never behind something eles*/
     z-index: 100;
 }
 .navName{
@@ -35,20 +50,173 @@ nav {
     left: 0;
     top: 0;
 }
-
-/* nav links */
 a {
     color: #ffffff;
     padding: 1em 1em 1em 1em;
     text-decoration: none;
 }
-
 a:hover {
     color: #474747;
 }
 
-.footer {
+/*Acting Portfolio*/
+.act {
+    position: relative;
+    grid-area: 2 / 1 / 4 / 3; 
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+}
+.act::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/acting.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.act:hover::after {
+    opacity: 0.5;
+}
+.act:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(177, 177, 177);
+}
+.act:not(:hover)::after {
+    opacity: 0;
+}
+.act:hover::after h1{
+    opacity: 1;
+}
+
+/*Music Portfolio*/
+.music { 
+    position: relative;
+    grid-area: 2 / 3 / 4 / 5; 
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.music::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/music.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.music:hover::after {
+    opacity: 0.5;
+}
+.music:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(177, 177, 177);
+}
+.music:not(:hover)::after {
+    opacity: 0;
+}
+.music:hover::after h1{
+    opacity: 1;
+}
+
+/*Photography Portfolio*/
+.photo { 
+    position: relative;
+    grid-area: 4 / 1 / 6 / 3; 
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: none;
+}
+.photo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/photography.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.photo:hover::after {
+    opacity: 0.5;
+}
+.photo:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(177, 177, 177);
+}
+.photo:not(:hover)::after {
+    opacity: 0;
+}
+.photo:hover::after h1{
+    opacity: 1;
+}
+
+.other { 
+    position: relative;
+    grid-area: 4 / 3 / 6 / 5; 
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: none;
+}
+.other::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/acting.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.other:hover::after {
+    opacity: 0.5;
+}
+.other:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(177, 177, 177);
+}
+.other:not(:hover)::after {
+    opacity: 0;
+}
+.other:hover::after h1{
+    opacity: 1;
+}
+
+.footer {
+    position: fixed;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+.contactImg {
+    height: 50px;
+    width: 50px;
 }
 .contactInfo {
     text-align: center;
