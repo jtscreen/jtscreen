@@ -1,0 +1,145 @@
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+}
+
+body {
+    background: linear-gradient(to bottom, #d4d3d3 0%, #000 100%);
+    height: 135vh;
+    width: 100vw;
+    font-family: "Poetsen One", sans-serif;
+    overflow-x: hidden;
+}
+
+/*Navigation*/
+.nav { 
+    grid-area: 1 / 1 / 2 / 5; 
+    height: 8vh; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    right: 1px;
+
+    background: linear-gradient(to top, #ffffff00 0%, #4c4c4c 100%);
+    font-size: 30px;
+    color:#ffffff;
+    text-align: end;
+    padding-top: 1em;
+    padding-bottom: 10px;
+    
+    z-index: 100;
+}
+.navName{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+a {
+    color: #ffffff;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    transition: all;
+}
+a:hover {
+    color: #474747;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+/*Video Content*/
+.reel { 
+    grid-area: 2 / 1 / 4 / 3; 
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    height: 40vh;
+    width: auto;
+}
+.description{
+    height: 40vh;
+    width: 40vw;
+    padding-left: 5vw;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+iframe{
+    padding-left: 5vw;
+}
+
+/*Downloadable Content*/
+.content { 
+    grid-area: 4 / 1 / 6 / 3; 
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.prodPhoto { 
+    grid-area: 4 / 2 / 6 / 3; 
+    height: 40vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10vw;
+}
+
+#prodPhoto{
+    height: 40vh;
+    width: auto;
+    padding-top: 5vh;
+    position: absolute;
+}
+.arrow{
+    color: white;
+    position: relative;
+    height: 40vh;
+    width: 20vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#title{
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40vh;
+    font-size: 20px;
+}
+
+/*Footer*/
+.footer { 
+    grid-area: 6 / 1 / 7 / 5; 
+    height: 5vh;
+    width: 100vw;
+    margin-top: 10vh;
+    color: white;
+}
+.contactImg {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.contactInfo {
+    text-align: center;
+}

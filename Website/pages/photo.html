@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="photo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <!--Navigation-->
+        <div class="nav"> 
+            <header>
+                <nav>
+                    <a href="../home/home.html" class="navName">Joshua Screen</a>
+                    <a href="../home/home.html">Home</a> |
+                    <a href="../portfolio/portfolio.html">Portfolio</a> |
+                    <a href="../contact/contact.html">Contact</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="headshot">
+            <div class="container">
+                <img id="headshot" src="../workImg/headshot/arden1.jpg">
+                <h1 class="arrow" onclick="prev()">&lt;</h1>
+                <h1 class="arrow" onclick="next()">&gt;</h1>
+            </div>
+            <div class="slider">
+                <h2>Headshots</h2>
+                <p>Anywhere from headshots for performers to profile pictures for linkedin!</p>
+            </div>
+        </div>
+        <div class="portrait">
+            <div class="container">
+                <img id="portrait" src="../workImg/portrait/julie4.jpg">
+                <h1 class="arrow" onclick="prev1()">&lt;</h1>
+                <h1 class="arrow" onclick="next1()">&gt;</h1>
+            </div>
+            <div class="slider odd">
+                <h2>Portraits</h2>
+                <p>If you just want something to post on social media or just capture a moment or connection with someone</p>
+            </div>
+        </div>
+        <div class="production">
+            <div class="container">
+                <img id="production" src="../workImg/production/godspell/godspell1.JPG">
+                <h1 class="arrow" onclick="prev2()">&lt;</h1>
+                <h1 class="arrow" onclick="next2()">&gt;</h1>
+            </div>
+            <div class="slider">
+                <h2>Production Photos</h2>
+                <p>Photos from different theater productions I have taken</p>
+                <h3 id="title">Godspell | Fordham University Splinter</h3>
+            </div>
+        </div>
+        <div class="event">
+            <div class="container">
+                <img id="event" src="../workImg/event/shaddi/shaddi1.jpg">
+                <h1 class="arrow" onclick="prev3()">&lt;</h1>
+                <h1 class="arrow" onclick="next3()">&gt;</h1>
+            </div>
+            <div class="slider odd">
+                <h2>Event Photography</h2>
+                <p>Having a special day and want to capture the moment? I can help!</p>
+            </div>
+        </div>
+        <div class="other">
+            <div class="container">
+                <img id="other" src="../workImg/other/ghost1.jpg">
+                <h1 class="arrow" onclick="prev4()">&lt;</h1>
+                <h1 class="arrow" onclick="next4()">&gt;</h1>
+            </div>
+            <div class="slider">
+                <h2>Other Works</h2>
+                <p>Some other images I took if you'd like to commission any work. I work with both digital and film.</p>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <hr>
+            <div class="contactInfo">
+                <h2>Contact Me</h2>
+                <div class="logo">
+                    <a href="https://www.instagram.com/jtscreen/" target="_blank"><img src="../img/insta.png" alt="instagram @jtscreen" class="contactImg"></a>
+                    <a href="mailto: jtscreen23@gmail.com" alt="email jtscreen23@gmail.com"><img src="../img/mail.png" class="contactImg"></a>
+                    <a href="https://www.linkedin.com/in/joshua-screen-b86791283" target="_blank" ><img src="../img/linkedin.png" alt="linkedin" class="contactImg"></a>
+                </div>
+            </div>
+            <p>&copy; 2024 Joshua Screen. All rights reserved.</p>
+        </footer>
+    </div>
+
+<script src="photo.js"></script>
+</body>
+</html>
