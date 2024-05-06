@@ -1,30 +1,35 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('.carouselimg');
+const headshotArray = [
+  "../img/headshot1.JPEG",
+  "../img/headshot2.JPEG",
+  "../img/headshot3.JPEG",
+  "../img/headshot4.JPEG",
+  "../img/headshot5.JPEG",
+  "../img/headshot6.JPEG",
+  "../img/headshot7.JPEG"
+];
+let i = 1;
 
-function showImage(index) {
-    images.forEach((image, i) => {
-        if (i === index) {
-            image.classList.add('active');
-        } else {
-            image.classList.remove('active');
-        }
+function next() {
+  if (i == headshotArray.length - 1) {
+    $("#headshot").fadeOut(700, function() {
+      $("#headshot").attr("src", headshotArray[i]);
+      i = 0;
+      $("#headshot").fadeIn(1000);
     });
+  } else {
+    $("#headshot").fadeOut(700, function() {
+      $("#headshot").attr("src", headshotArray[i]);
+      i++;
+      $("#headshot").fadeIn(1000);
+    });
+  }
+  console.log(i);
 }
 
-
-function nextImage() { 
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
+function auto(){
+  next();
 }
-/*
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-*/
-function autoSlide(){nextImage();}
 
-// Show the initial image
-showImage(currentIndex);
-
-setInterval(autoSlide, 8000);
+$(document).ready(function() {
+    setInterval(auto, 6000);
+});

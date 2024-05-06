@@ -4,60 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>   
-    <!--Header-->     
-    <div>
-        <header>
-            <nav>
-                <a href="../home/home.html" class="navName">Joshua Screen</a>
-                <a href="../home/home.html">About</a> |
-                <a href="../portfolio/portfolio.html">Portfolio</a> |
-                <a href="../contact/contact.html">Contact</a>
-            </nav>
-        </header>
-    </div>
-    <div class="page">
-        <div class="content">
-        <!--Photo Carousel-->
-        <div class="carousel">
-            <!--
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-            -->
-            <div> 
-                <img src="../img/headshot1.JPEG" alt="Photo 1" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot2.JPEG" alt="Photo 2" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot3.JPEG" alt="Photo 3" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot4.JPEG" alt="Photo 4" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot5.JPEG" alt="Photo 5" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot6.JPEG" alt="Photo 6" class="carouselimg" onclick="nextImage()">
-                <img src="../img/headshot7.JPEG" alt="Photo 7" class="carouselimg" onclick="nextImage()">
+<body>
+    <div class="parent">
+        <!--Navigation-->
+        <div class="nav"> 
+            <div>
+                <header>
+                    <nav>
+                        <a href="../home/home.html" class="navName">Joshua Screen</a>
+                        <a href="../home/home.html">Home</a> |
+                        <a href="../portfolio/portfolio.html">Portfolio</a> |
+                        <a href="../contact/contact.html">Contact</a>
+                    </nav>
+                </header>
             </div>
         </div>
-
-        <!--Intro Paragraph-->
+        <!--Head shot Carousel-->
+        <div class="headshot"> 
+            <div class="carousel">
+                <img id="headshot" src="../img/headshot1.JPEG" alt="Photo 1" class="carouselimg">
+            </div>
+        </div>
+        <!--Biography-->
+        <div class="bio"> 
+            <!--Intro Paragraph-->
             <div class="text">
-                <h1 class="introHead">Joshua Screen | jtscreen</h1>
-                <p class="intoText">Joshua Screen is a multidisaplinary artist with a focus on acting, music production, photography and web design.</p>
-                <p class="intoText">As an actor, he has appeared in various projects in both film and stage. With nearly a decade of experience in the art, he would love to be part of any project presented to him with other passionate artists.</p>
-                <p class="intoText">As a music producer, Joshua Screen &#40;who often goes by jtscreen on his own productions&#41; started out by producing his own song writing. He has worked on some independednt artists work and has even worked on some original music for a feature film.</p>
-                <p class="intoText">As a photographer, Joshua primarily focuses on headshots, portrature, and production photos for performances.</p>
-                <p class="intoText">As a web designer, Joshua has a fare amount of experience. Before his beginnings in the arts, he had a background in computer science. He even created this website from scratch.</p>
+                <p>Joshua Screen is a New York City born and based multidisciplinary artist whose work spans across various forms of mediums. Through acting, photography, music, and more, he tells stories and helps brings the stories of others to life.</p>
+                <p class="secondp">Check out his culmination of work in his portfolio and if you'd like to learn more, take a look at his social's below. Can't wait to work with you!</p>
             </div>
         </div>
-    </div>
-    <!--Footer-->
-    <hr>
-    <div class="footer">
-        <footer>
+        <!--Footer-->
+        <footer class="footer">
+            <hr>
             <div class="contactInfo">
                 <h2>Contact Me</h2>
                 <div class="logo">
                     <a href="https://www.instagram.com/jtscreen/" target="_blank"><img src="../img/insta.png" alt="instagram @jtscreen" class="contactImg"></a>
-
                     <a href="mailto: jtscreen23@gmail.com" alt="email jtscreen23@gmail.com"><img src="../img/mail.png" class="contactImg"></a>
+                    <a href="https://www.linkedin.com/in/joshua-screen-b86791283" target="_blank" ><img src="../img/linkedin.png" alt="linkedin" class="contactImg"></a>
                 </div>
             </div>
             <p>&copy; 2024 Joshua Screen. All rights reserved.</p>
